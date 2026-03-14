@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Live
 
-[ssp-portfolio.vercel.app](https://ssp-portfolio.vercel.app)
+[portfolio-sohee-sophie-park.vercel.app](https://portfolio-sohee-sophie-park.vercel.app)
