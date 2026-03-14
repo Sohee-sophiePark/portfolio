@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="font-serif text-2xl text-text-primary mb-6">Contact</h2>
         <p className="text-text-secondary mb-4">
-          Open to the right conversations.
+          Always happy to hear from you.
         </p>
 
         <a

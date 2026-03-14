@@ -6,7 +6,7 @@ export default function About() {
         <p className="font-sans text-base text-text-secondary leading-relaxed max-w-2xl">
           Senior AI/ML Practitioner with 5+ years building ML and Generative AI
           solutions for real business problems, mostly in banking. I care about
-          the full journey — from a rough idea to a validated model to something
+          the full journey, from a rough idea to a validated model to something
           a business can actually use. AWS ML Specialty and Azure Data Engineer
           certified, and always pushing into what&apos;s next.
         </p>

@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: { project: Project }) {
     <div
       className={`rounded-xl p-6 ${
         isReady
-          ? "bg-white border border-border hover:border-accent transition-colors"
+          ? "bg-[#1D9E75]/[0.06] border border-accent/30 hover:border-accent transition-colors"
           : "border-2 border-dashed border-border opacity-60"
       }`}
     >
