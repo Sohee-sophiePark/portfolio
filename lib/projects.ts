@@ -31,4 +31,10 @@ export const projects: Project[] = [
     stack: ["Python", "pandas", "FastAPI", "Gemini", "React", "TypeScript"],
     demo: "https://sohee-sophiepark.github.io/money-trail-agents/",
   },
+  {
+    name: "Filing Delta Agents",
+    description: "Annual credit review over SEC filings for four US airlines: what changed since last year's 10-K, with every number recomputed from XBRL by code, every claim cited, gates and an evaluator, and a workspace to read the filing, ask, highlight, note and print the memo.",
+    stack: ["Python", "XBRL", "BM25", "Gemini", "React", "TypeScript"],
+    demo: "https://sohee-sophiepark.github.io/filing-delta-agents/",
+  },
 ];
