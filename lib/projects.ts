@@ -3,6 +3,7 @@ export type Project = {
   description: string;
   stack: string[];
   github?: string;
+  demo?: string;
   status: "ready" | "coming-soon";
 };
 
@@ -13,6 +14,14 @@ export const projects: Project[] = [
     description: "B2B banking ops platform with AI agents for fraud, risk, compliance, and advisory. Human-in-the-loop throughout.",
     stack: ["Python", "LangGraph", "LiteLLM", "FastAPI", "React"],
     github: "https://github.com/Sohee-sophiePark/aegis-agents",
+    status: "ready",
+  },
+  {
+    name: "Advisor Copilot",
+    description: "Multi-agent copilot that prepares wealth advisor client reviews: parallel analysts, deterministic gates, an evaluator revision loop, and human approval. Every number is computed by code and traceable.",
+    stack: ["Python", "FastAPI", "Gemini", "React", "TypeScript"],
+    github: "https://github.com/Sohee-sophiePark/advisor-copilot",
+    demo: "https://sohee-sophiepark.github.io/advisor-copilot/",
     status: "ready",
   },
   // --- AI Research Pipeline
