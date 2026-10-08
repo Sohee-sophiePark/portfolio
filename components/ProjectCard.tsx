@@ -7,28 +7,24 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="flex items-start justify-between mb-2">
         <h3 className="font-serif text-xl text-text-primary">{project.name}</h3>
         <div className="flex items-center gap-4 shrink-0">
-          {project.demo && (
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-sm text-accent hover:underline"
-            >
-              Live demo
-              <ExternalLink size={14} />
-            </a>
-          )}
-          {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-text-muted hover:text-accent transition-colors"
-              aria-label={`View ${project.name} on GitHub`}
-            >
-              <Github size={16} />
-            </a>
-          )}
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm text-accent hover:underline"
+          >
+            Live demo
+            <ExternalLink size={14} />
+          </a>
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-muted hover:text-accent transition-colors"
+            aria-label={`View ${project.name} on GitHub`}
+          >
+            <Github size={16} />
+          </a>
         </div>
       </div>
 
