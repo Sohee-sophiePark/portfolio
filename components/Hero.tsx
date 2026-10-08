@@ -1,23 +1,12 @@
-"use client";
+import { Download, Github, Linkedin } from "lucide-react";
 
-import { useEffect, useState } from "react";
-import { Github, Linkedin } from "lucide-react";
-
-const roles = ["AI/ML Practitioner", "Agentic AI", "LLM Systems", "GCP"];
+const roles = ["Senior AI/ML Engineer", "Agentic AI", "LLM Systems", "Production ML"];
 
 export default function Hero() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <section
       id="hero"
-      className={`py-12 md:py-20 transition-opacity duration-600 ease-in-out ${
-        mounted ? "opacity-100" : "opacity-0"
-      }`}
+      className="py-12 md:py-20 opacity-0 animate-fade-in motion-reduce:animate-none motion-reduce:opacity-100"
     >
       <div className="max-w-3xl mx-auto px-6 text-center md:text-left">
         {/* Avatar */}
@@ -29,6 +18,11 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Label */}
+        <p className="font-sans text-xs uppercase tracking-[0.2em] text-accent mb-3">
+          Think. Link. Ship.
+        </p>
+
         {/* Name */}
         <h1 className="font-serif text-4xl md:text-6xl text-text-primary mb-4">
           Sohee Park
@@ -36,8 +30,7 @@ export default function Hero() {
 
         {/* Tagline */}
         <p className="font-sans text-lg text-text-secondary max-w-xl mx-auto md:mx-0 mb-6">
-          I build ML and Generative AI tools for real business problems, in
-          banking and in the real world.
+          I connect the dots, from AI idea to measurable value.
         </p>
 
         {/* Role pills */}
@@ -53,7 +46,15 @@ export default function Hero() {
         </div>
 
         {/* Social links */}
-        <div className="flex gap-4 justify-center md:justify-start">
+        <div className="flex items-center gap-4 justify-center md:justify-start">
+          <a
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/SoheePark_RESUME.pdf`}
+            download
+            className="inline-flex items-center gap-2 border border-border rounded-lg px-4 py-2 text-sm text-text-primary hover:border-accent hover:text-accent transition-colors"
+          >
+            <Download size={16} />
+            Download resume
+          </a>
           <a
             href="https://github.com/Sohee-sophiePark"
             target="_blank"

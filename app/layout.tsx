@@ -15,11 +15,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sohee Park — AI/ML Practitioner",
+  title: "Sohee Park — Senior AI/ML Engineer",
   description:
-    "Senior AI/ML Practitioner building ML and Generative AI solutions for real business problems.",
+    "Hands-on Senior AI/ML Engineer building production AI: multi-agent systems, RAG, LLM evaluation, and classical ML.",
   robots: { index: false, follow: false },
+  referrer: "strict-origin-when-cross-origin",
 };
+
+const csp = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline'",
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self'",
+  "img-src 'self' data:",
+  "connect-src 'self'",
+].join("; ");
 
 export default function RootLayout({
   children,
@@ -28,6 +38,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      <head>
+        <meta httpEquiv="Content-Security-Policy" content={csp} />
+      </head>
       <body className="bg-background text-text-primary font-sans antialiased">
         {children}
       </body>

@@ -4,8 +4,8 @@
   --color-background: #FAFAF8;
   --color-text-primary: #1A1A2E;
   --color-text-secondary: #4A5568;
-  --color-text-muted: #718096;
-  --color-accent: #1D9E75;
+  --color-text-muted: #636E80;
+  --color-accent: #16805C;
   --color-border: #E2E8F0;
 
   --font-serif: var(--font-playfair);
@@ -24,7 +24,7 @@
     --color-background: #16161F;
     --color-text-primary: #E8E8E4;
     --color-text-secondary: #8A95A3;
-    --color-text-muted: #5C6470;
+    --color-text-muted: #7F8999;
     --color-accent: #22B584;
     --color-border: #252533;
   }
@@ -32,6 +32,11 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 body {

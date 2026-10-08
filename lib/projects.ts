@@ -43,6 +43,13 @@ export const projects: Project[] = [
     stack: ["Python", "LiteLLM", "ChromaDB", "LangGraph", "FastAPI"],
     status: "coming-soon",
   },
+  // --- DOC
+  {
+    name: "Financial Document Intelligence",
+    description: "End-to-end intelligent document processing pipeline for financial documents. Compares OCR APIs, LayoutLM fine-tuning, and VLM fine-tuning (LoRA/QLoRA). Calibrated confidence routing to human review via a LangGraph agentic pipeline.",
+    stack: ["Python", "LayoutLMv3", "Qwen2.5-VL", "LangGraph", "LiteLLM"],
+    status: "coming-soon",
+  },
   // --- Agent
   {
     name: "Research Agent",

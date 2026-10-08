@@ -1,23 +1,35 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
     <section id="contact" className="py-12 md:py-20">
       <div className="max-w-3xl mx-auto px-6">
-        <h2 className="font-serif text-2xl text-text-primary mb-6">Contact</h2>
-        <p className="text-text-secondary mb-4">
+        <p className="font-sans text-xs uppercase tracking-[0.2em] text-accent mb-2">
+          Contact
+        </p>
+        <h2 className="font-serif text-2xl text-text-primary mb-4">Let&apos;s talk</h2>
+        <p className="text-text-secondary mb-6">
           Always happy to hear from you.
         </p>
 
-        <a
-          href="mailto:***REMOVED***"
-          className="inline-flex items-center gap-2 text-accent hover:underline mb-6"
-        >
-          <Mail size={16} />
-          ***REMOVED***
-        </a>
-
-        <div className="flex gap-4 mt-4">
+        <div className="flex flex-wrap items-center gap-6">
+          <a
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/SoheePark_RESUME.pdf`}
+            download
+            className="inline-flex items-center gap-2 border border-border rounded-lg px-6 py-3 text-sm text-text-primary hover:border-accent hover:text-accent transition-colors"
+          >
+            <Download size={16} />
+            Download resume
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sohee-sophie-park/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-accent hover:underline"
+          >
+            <Linkedin size={16} />
+            Message me on LinkedIn
+          </a>
           <a
             href="https://github.com/Sohee-sophiePark"
             target="_blank"
@@ -26,15 +38,6 @@ export default function Contact() {
             aria-label="GitHub"
           >
             <Github size={20} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sohee-sophie-park/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-text-muted hover:text-accent transition-colors"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={20} />
           </a>
         </div>
       </div>

@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Live
 
-[portfolio-sohee-sophie-park.vercel.app](https://portfolio-sohee-sophie-park.vercel.app)
+[sohee-sophiepark.github.io/portfolio](https://sohee-sophiepark.github.io/portfolio/)
